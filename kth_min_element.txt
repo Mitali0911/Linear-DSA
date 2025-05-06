@@ -1,0 +1,24 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        int[] a = {3,2,8,9,5,1};
+        int k = 3;
+        int n = a.length;
+        for(int i=0; i<n;i++){
+            for(int j=i+1; j<n;j++){
+                if(a[i]>a[j]){
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+            if(i==k-1){
+                System.out.println(a[i]);
+                break;
+            }
+        }
+        
+    }
+}
